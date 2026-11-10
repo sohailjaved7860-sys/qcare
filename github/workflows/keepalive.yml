@@ -1,0 +1,26 @@
+# Supabase's free plan pauses a project after about a week of low activity.
+# This calls the public catalogue once a day so a quiet week doesn't take the shop offline.
+# Setup: repo Settings > Secrets and variables > Actions > Variables:
+#   SUPABASE_URL = https://xxxx.supabase.co     SUPABASE_KEY = your publishable (public) key
+# Note: GitHub switches scheduled workflows off after 60 days without a commit. Re-enable under Actions.
+name: Keep Supabase awake
+on:
+  schedule:
+    - cron: "23 2 * * *"
+  workflow_dispatch:
+permissions: {}
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call the public catalogue
+        env:
+          URL: ${{ vars.SUPABASE_URL }}
+          KEY: ${{ vars.SUPABASE_KEY }}
+        run: |
+          set -eu
+          AUTH=()
+          case "$KEY" in eyJ*) AUTH=(-H "Authorization: Bearer $KEY");; esac
+          curl -fsS -X POST "$URL/rest/v1/rpc/get_catalog" -H "apikey: $KEY" "${AUTH[@]}" \
+               -H "Content-Type: application/json" -d '{}' -o /dev/null
+          echo "Supabase answered."
