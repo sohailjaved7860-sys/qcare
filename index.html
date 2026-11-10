@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="QCare Candles: handcrafted scented candles in signature fragrances, custom gifting and bulk orders. Order online, pay by UPI.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob: https://*.supabase.co; connect-src 'self' https://*.supabase.co; object-src 'none'; base-uri 'self'; form-action 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta property="og:title" content="QCare Candles">
+<meta property="og:description" content="Handcrafted scented candles, custom gifting and bulk orders.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/photos/photo-1.webp">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<title>QCare Candles</title>
+<script src="js/theme.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<header><div class="w">
+  <a class="logo" href="#top"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21C6 18 4 13 5 6c6 0 9 4 7 15Z"/><path d="M12 21c0-6 3-10 8-11-1 6-3 9-8 11Z"/></svg>QCare</a>
+  <nav id="nv" aria-label="Primary"><a href="#collection">Collection</a><a href="#gifting">Gifting</a><a href="#bulk">Bulk Orders</a><a href="#about">About</a><a href="#contact">Contact</a><a class="nw" data-wa="Hi QCare, I’d like to know more about your candles.">WhatsApp</a></nav>
+  <span style="display:flex;gap:8px"><button class="btn o tg" id="mn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nv"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button><button class="btn o tg" id="tm" type="button"></button><button class="btn o" id="cb" type="button">Cart (<span id="cc">0</span>)</button><a class="btn" data-wa="Hi QCare, I’d like to know more about your candles."><span class="wl">WhatsApp</span><span class="ws">Chat</span></a></span>
+</div></header>
+
+<main id="top">
+<div class="band"><i class="bk b1"></i><i class="bk b2"></i><i class="bk b3"></i><i class="bk b4"></i><div class="w hero">
+  <div>
+    <span class="chip">Handcrafted · Premium fragrances</span>
+    <h1>Candles made <em>with care.</em></h1>
+    <p class="lead">Hand-poured scented candles in 41 ml jars, in our signature fragrances. Pick a scent, drag to turn the jar, tap the flame to blow it out.</p>
+    <div class="cta"><a class="btn" href="#collection">Shop the collection</a><a class="btn o" href="#gifting">Custom gifting</a></div>
+    <p class="tl" id="tl">Delivery across India · Pay by UPI · Order in two minutes</p>
+  </div>
+  <div class="stage">
+    <div id="gl" role="img" aria-label="Interactive 3D QCare candle"></div>
+    <div class="pick" id="pick" role="group" aria-label="Choose a fragrance"></div>
+    <p class="fname" id="fname" aria-live="polite"></p>
+    <div class="lt"><button class="btn o" id="lt" type="button">Blow out the candle</button></div>
+  </div>
+</div></div>
+<div class="marq" aria-hidden="true"><div class="mt"><span>Handcrafted Candles</span><span>Premium Fragrances</span><span>Long-Lasting Aroma</span><span>Made with Care</span><span>Handcrafted Candles</span><span>Premium Fragrances</span><span>Long-Lasting Aroma</span><span>Made with Care</span></div></div>
+
+<div class="w"><div class="feat">
+  <div><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c3 3 5 6 5 9a5 5 0 0 1-10 0c0-3 2-6 5-9Z"/></svg>Handcrafted Candles</div>
+  <div><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21C6 18 4 13 5 6c6 0 9 4 7 15Z"/></svg>Premium Fragrances</div>
+  <div><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>Long-Lasting Aroma</div>
+  <div><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-9-9c-1-3 .6-6 3.6-6.4C8.6 4.300 10.600 5.400 12 7.500c1.400-2.100 3.400-3.200 5.400-2.900 3 .4 4.600 3.400 3.600 6.400-2 4.600-9 9-9 9Z"/></svg>Made with Care</div>
+</div></div>
+
+<section id="collection"><div class="w">
+  <div class="rv"><span class="chip">Our collection</span><h2>Our signature fragrances</h2><p class="sub" id="csub">Tap a label to see it in 3D.</p><div class="opts"><button class="btn o" id="wf" type="button">Saved (0)</button></div></div>
+  <div class="grid" id="grid"></div>
+  <p class="em" id="gmsg" aria-live="polite"></p>
+</div></section>
+
+<section id="gallery"><div class="w"><div class="rv"><span class="chip">Straight from our studio</span><h2>Hand-poured, hand-packed</h2><p class="sub">Real QCare jars, labels and lids.</p></div>
+  <div class="gal"><img src="assets/photos/photo-3.webp" alt="QCare candle burning in a small glass jar" loading="lazy"><img src="assets/photos/photo-4.webp" alt="QCare Aqua candle jar with its wrap label" loading="lazy"><img src="assets/photos/photo-2.webp" alt="Aqua candle jar with black lid beside a flower pot" loading="lazy"><img src="assets/photos/photo-5.webp" alt="Holding a QCare Aqua candle jar" loading="lazy"><img src="assets/photos/photo-6.webp" alt="QCare Aqua lid with the round sticker" loading="lazy"></div></div></section>
+
+<!-- Seasonal banner. Remove the word "hidden" to show it again. -->
+<section id="festive" class="dk" hidden><div class="w two">
+  <div class="rv"><span class="chip">Festive collection</span><h2>Light up every celebration</h2><p class="sub">Handcrafted candles in premium fragrances — made for Diwali and every festival of lights.</p><div class="cta"><a class="btn" data-wa="Hi QCare, I’d like to order festive candles.">Order festive candles</a></div></div>
+  <div class="fr tilt"><img src="assets/photos/photo-1.webp" alt="QCare Diwali greeting with scented candles, a diya and marigolds" width="560" height="560" loading="lazy"></div>
+</div></section>
+
+<section id="gifting" class="alt"><div class="w">
+  <div class="rv"><span class="chip">Custom gifting</span><h2>A candle for every occasion</h2><p class="sub">Tell us what you have in mind and we’ll take it from there.</p></div>
+  <div class="og" id="og"></div>
+  <form id="gf" style="margin-top:28px;max-width:560px"><h3>Plan your gift</h3><label for="go">Occasion</label><select id="go"></select><label for="gfr">Fragrance</label><select id="gfr"></select><label for="gq">Quantity</label><input id="gq" type="number" min="1" required><label for="gk">Packaging</label><input id="gk" placeholder="e.g. gift box, ribbon, thank-you card"><label for="gp">Personalisation (names or message)</label><input id="gp"><label for="gw">Gift wrapping</label><select id="gw"><option>No wrapping</option><option>Gift wrap</option><option>Gift box</option></select><label for="gc">Message card text (optional)</label><input id="gc"><label style="display:flex;gap:8px;align-items:center;font-weight:500"><input id="gma" type="checkbox" style="min-height:0"> Deliver to more than one address</label><label for="gn">Your name</label><input id="gn" required autocomplete="name"><label for="gt">Phone</label><input id="gt" type="tel" required autocomplete="tel"><input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true"><button class="btn" type="submit">Send gifting enquiry</button><small class="em" id="gm" aria-live="polite"></small></form>
+</div></section>
+
+<section id="bulk"><div class="w two">
+  <div class="rv"><span class="chip">Corporate &amp; events</span><h2>Bulk &amp; customised orders</h2>
+    <p class="sub">Weddings, corporate gifting and events. Every bulk order is confirmed manually by our team — 50% advance at confirmation and the balance before dispatch.</p>
+    <img class="ph" style="margin-top:24px" src="assets/photos/photo-2.webp" alt="Aqua candle jar with black lid beside a flower pot" loading="lazy"></div>
+  <form id="bf"><label for="bn">Customer name</label><input id="bn" required autocomplete="name">
+    <label for="bp">Contact number</label><input id="bp" type="tel" required autocomplete="tel">
+    <label for="be">Email address</label><input id="be" type="email" autocomplete="email">
+    <label for="bfr">Fragrance</label><select id="bfr"></select>
+    <label for="bq">Required quantity</label><input id="bq" type="number" min="1" required>
+    <label for="bc">Customisation requirements</label><textarea id="bc" rows="2"></textarea>
+    <label for="bk">Packaging requirements</label><input id="bk">
+    <label for="bd">Preferred delivery date</label><input id="bd" type="date">
+    <label for="ba">Complete delivery address</label><textarea id="ba" rows="2" required></textarea>
+    <label for="bi">Additional instructions</label><textarea id="bi" rows="2"></textarea>
+    <small class="em">Have a reference image or design? Send it in the WhatsApp chat that opens next.</small>
+    <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <button class="btn" type="submit">Send bulk enquiry</button><small class="em" id="bm" aria-live="polite"></small></form>
+</div></section>
+
+<section id="about" class="alt"><div class="w two">
+  <img class="ph" src="assets/photos/photo-3.webp" alt="QCare candle burning in a small glass jar" loading="lazy">
+  <div class="rv"><span class="chip">About QCare</span><h2>Light up your moments. Create your memories.</h2>
+    <p class="sub">At QCare Candles, we believe that a little fragrance can make an ordinary moment feel special.</p><p class="sub">QCare was created with a simple thought: candles are more than just a source of light. They bring warmth, create ambience and make everyday spaces feel more welcoming.</p><p class="sub">We bring you a collection of thoughtfully selected fragrances, designed to complement different moods, moments and spaces. From the soothing touch of Lavender to the timeless charm of Rose and the refreshing notes of Aqua, every fragrance offers its own experience.</p><p class="sub">Each QCare candle is prepared with care, keeping in mind the little details that make a difference — from its fragrance to its presentation.</p><p class="sub">Whether you’re creating a peaceful atmosphere at home, celebrating a special occasion or choosing a thoughtful gift for someone you love, QCare Candles is here to make those moments memorable.</p><h3 class="ah">Our Vision</h3><p class="sub">To make beautiful fragrance experiences accessible to everyone and become a trusted name for candles and thoughtful gifting.</p><h3 class="ah">Our Promise</h3><ul class="cl" style="margin-top:10px"><li><b>Thoughtful Fragrances:</b> A collection of fragrances for different moods and occasions.</li><li><b>Made with Care:</b> Attention to detail in every candle.</li><li><b>Beautiful Gifting:</b> Thoughtful candles for the people and moments that matter.</li><li><b>Customer Happiness:</b> Your satisfaction is at the heart of everything we do.</li></ul><p class="sub" style="margin-top:20px"><b>QCare Candles — A Little Light, A Beautiful Feeling.</b></p></div>
+</div></section>
+
+<!-- Remove "hidden" once you have real customer reviews to show. -->
+<section id="reviews" hidden><div class="w"><div class="rv"><span class="chip">Happy customers</span><h2>What customers say</h2><p class="sub">Verified customer reviews will appear here soon.</p></div>
+  <div class="rc" style="margin-top:32px"><p>We’re collecting our first customer reviews. Bought a QCare candle? Message us on WhatsApp and tell us what you think.</p></div><div class="cta"><a class="btn o" href="https://share.google/tVYJMkjYh8guSN7fn" target="_blank" rel="noopener">Find QCare on Google</a></div></div></section>
+
+
+<section id="care"><div class="w two"><div class="rv"><span class="chip">Candle care</span><h2>Burn it safely</h2></div><ul class="cl"><li>Trim the wick to about 5 mm before each burn.</li><li>Place the jar on a level, heat-resistant surface, away from drafts and anything flammable.</li><li>Never leave a burning candle unattended, and keep it away from children and pets.</li><li>Let the wax cool fully before moving the jar, and put the lid back on to keep the scent fresh.</li></ul></div></section>
+<section id="faq" class="alt"><div class="w"><div class="rv"><span class="chip">Questions</span><h2>Good to know</h2></div><div class="faq" style="margin-top:24px;max-width:760px">
+<details><summary>What sizes and prices do you have?</summary><p>Our candles come in a 41 ml jar. The price of each candle is shown in the collection above. Shipping is added at checkout once you enter your PIN code.</p></details>
+<details><summary>How do I pay?</summary><p>Place your order on this site, then send us the order on WhatsApp. We reply with a UPI QR code for the exact amount. Once the payment reaches our account we confirm your order and dispatch it. We do not offer cash on delivery at the moment.</p></details>
+<details><summary>How do I track my order?</summary><p>Open the cart and use “Track an order” with your order number and mobile number. We also send updates on WhatsApp.</p></details>
+<details><summary>How do bulk and gift orders work?</summary><p>Send a bulk enquiry or use Plan your gift. Our team confirms every bulk order manually, with 50% advance at confirmation and the balance before dispatch.</p></details>
+<details><summary>How can I reach you?</summary><p id="fq"></p></details>
+<details><summary>What about shipping, returns and refunds?</summary><p>See our <a href="policies.html">shipping, returns, refund and privacy policies</a>.</p></details></div></div></section>
+<section id="contact"><div class="w two">
+  <div class="rv info"><span class="chip">Get in touch</span><h2>We’d love to hear from you</h2>
+    <p class="sub" id="ci"></p>
+    <div class="cta"><a class="btn" data-wa="Hi QCare, I have a question.">Message on WhatsApp</a></div></div>
+  <form id="f"><label for="n">Your name</label><input id="n" required autocomplete="name"><label for="m">Message</label><textarea id="m" rows="4" required maxlength="1000"></textarea><input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true"><button class="btn" type="submit">Send via WhatsApp</button></form>
+</div></section>
+</main>
+
+<footer><div class="w"><span>© QCare Candles<span id="gsn"></span></span><span><a href="policies.html">Policies</a><a href="policies.html#privacy">Privacy</a><span id="so"></span></span></div></footer>
+
+<a class="fab" data-wa="Hi QCare, I have a question." aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20Zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.3.2-.4.1-.2 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 4 3.5.6.2 1 .4 1.3.5.6.2 1.1.1 1.5.1.5-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.4-.3Z"/></svg></a>
+<div class="dr" id="pd" hidden role="dialog" aria-modal="true" aria-label="Product details"><div class="dp"><div class="dh"><h3 id="pt"></h3><button class="x" id="px" type="button" aria-label="Close product">×</button></div><div id="pb"></div></div></div>
+<div class="dr" id="dr" hidden role="dialog" aria-modal="true" aria-label="Your cart"><div class="dp">
+<div class="dh"><h3>Your cart</h3><button class="x" id="dx" type="button" aria-label="Close cart">×</button></div>
+<div id="dl"></div>
+<div id="done" aria-live="polite"></div>
+<div id="cx">
+<details class="cpd"><summary>Have a coupon code?</summary><div class="r2"><input id="cp" autocomplete="off" maxlength="20" aria-label="Coupon code"><button class="btn o" id="ca" type="button">Apply</button></div></details><small class="em" id="cm" aria-live="polite"></small>
+<div><label for="pin">Delivery PIN code</label><input id="pin" inputmode="numeric" maxlength="6" placeholder="6-digit PIN" autocomplete="postal-code"></div>
+<div class="tt" id="tt"></div>
+<small class="er" id="qe" aria-live="polite"></small>
+<form id="co" novalidate><label for="nm">Full name</label><input id="nm" name="nm" required maxlength="80" autocomplete="name">
+<div class="g2"><div><label for="ph">Mobile number</label><input id="ph" name="ph" type="tel" required maxlength="14" autocomplete="tel" inputmode="tel"></div><div><label for="em">Email (optional)</label><input id="em" name="em" type="email" maxlength="120" autocomplete="email"></div></div>
+<label for="a1">House / building</label><input id="a1" name="a1" required maxlength="120" autocomplete="address-line1">
+<label for="a2">Street / locality</label><input id="a2" name="a2" maxlength="120" autocomplete="address-line2">
+<div class="g2"><div><label for="ct">City</label><input id="ct" name="ct" required maxlength="60" autocomplete="address-level2"></div><div><label for="st">State</label><input id="st" name="st" required maxlength="60" autocomplete="address-level1"></div></div>
+<label for="nt">Personalisation (name or message, optional)</label><input id="nt" name="nt" maxlength="200">
+<input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+<div class="hw"><b>How payment works:</b> place the order, send it to us on WhatsApp, and we reply with a UPI QR code for the exact amount. Your order is confirmed once the payment reaches our account.</div>
+<button class="btn" type="submit" id="pb2">Place order</button><small class="er" id="cm2" aria-live="polite"></small></form>
+</div>
+<details><summary>Past orders on this device</summary><div id="oh"></div></details>
+<details id="tk"><summary>Track an order</summary><form class="trk" id="tf" style="padding:0;border:0;background:none"><label for="to">Order number</label><input id="to" required maxlength="12" placeholder="e.g. QC1001" autocomplete="off"><label for="tp">Mobile number used on the order</label><input id="tp" type="tel" required maxlength="14" autocomplete="tel"><button class="btn o" type="submit">Check status</button><small class="em" id="tr" aria-live="polite"></small></form></details>
+<p class="dn" id="dn"></p>
+</div></div>
+<script src="js/vendor/three.min.js" defer></script>
+<script src="js/config.js" defer></script>
+<script src="js/store.js" defer></script>
+</body>
+</html>

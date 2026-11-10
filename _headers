@@ -1,0 +1,14 @@
+# Real security headers. Used automatically by Cloudflare Pages and Netlify.
+# GitHub Pages ignores this file (it cannot send custom headers).
+/*
+  Strict-Transport-Security: max-age=31536000
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+  Cross-Origin-Opener-Policy: same-origin-allow-popups
+/admin/*
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: no-store
+/supabase/*
+  X-Robots-Tag: noindex
